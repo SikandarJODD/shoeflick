@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Flick - pvppcoe</title>
+    <meta name="description" content="Shoe Nike">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="/imgs/img5.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/sass/style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+
+    <header>
+        <div class="nav_menu">
+            <img src="/imgs/kit2.png" class="w-28" alt="">
+            <h1 class="text-4xl ">Shoe <span>Flick</span></h1>
+        </div>
+        <div class="divide">
+            <div class="left">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/imgs/mint3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/imgs/mint2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/imgs/img6.1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/imgs/img6.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/imgs/img3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/imgs/img2.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="right">
+                <h1 class="heading"></h1>
+                <ul class="list_items">
+                    <li class="item">Seamless Comfort</li>
+                    <li class="item">Huslte Lifestyle</li>
+                    <li class="item">Light & Smooth</li>
+                    <li class="item">High Grade Fabrics</li>
+                </ul>
+                <p class="revealp">Make sure you are on correct path - <i><span>ShoeFlick</span></i></p>
+                <button class="btn shadow-md">Shop now!</button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="containe">
+        </div>
+        </div>
+
+    </section>
+    <footer></footer>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                // enabled: false,
+                dynamicBullets: true,
+                clikable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+        // Typed Js
+
+        var typed = new Typed('.heading', {
+            strings: ["Moments of Your <span>Style</span> ^1000", "Powers that <span>Runs</span> you. ^800", "Imagine <span>Best</span> in Your Shoe."],
+            typeSpeed: 40,
+            backSpeed: 40,
+            backDelay: 500,
+            showCursor: false,
+            cursorChar: '',
+            autoInsertCss: true,
+        });
+        // ScrollReveal({ reset: true });
+        ScrollReveal().reveal('.item', { duration: 950, interval: 600});
+        ScrollReveal().reveal('.revealp', { delay: 2500 });
+        ScrollReveal().reveal('.btn', { delay: 2900 });
+    </script>
+</body>
+
+</html>
